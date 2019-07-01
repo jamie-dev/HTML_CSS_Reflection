@@ -1,1 +1,149 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+/* -------------------------- Main Styles -------------------------- */
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* -------------------------- Header -------------------------- */
+header {
+    height: 110px;
+    width: 62%;
+    margin: auto;
+}
+
+/* -------------------------- Logo -------------------------- */
+.logo {
+    width: 405px;
+    height: 75px;
+    margin-top: 20px;
+    position: absolute;
+    background: url("../images/f-logo.png") no-repeat;
+    cursor: pointer;
+}
+
+/* -------------------------- Call to Action Buttons -------------------------- */
+.cta {
+    float: right;
+    display: flex;
+    margin-top: 26px;
+}
+
+.btn-support {
+    width: 130px;
+    height: 55px;
+    background: #4183d7;
+    color: white;
+    border: transparent;
+    border-radius: 4px;
+}
+
+.btn-contact {
+    width: 130px;
+    height: 55px;
+    background: #999aa2;
+    color: white;
+    border: transparent;
+    border-radius: 4px;
+    margin-left: 20px;
+}
+
+.btn-menu {
+    width: 55px;
+    height: 55px;
+    background: #333645;
+    color: white;
+    border: transparent;
+    border-radius: 4px;
+    margin-left: 20px;
+}
+
+/* -------------------------- Buttons on Hover -------------------------- */
+.btn-support:hover {
+    background: #2a6ec6;
+    cursor: pointer;
+}
+
+.btn-contact:hover {
+    background: #84858f;
+    cursor: pointer;
+}
+
+.btn-menu:hover {
+    background: #22242e;
+    cursor: pointer;
+}
+
+/* -------------------------- Button Active -------------------------- */
+.btn-support:active {
+    background: #195199;
+}
+
+.btn-contact:active {
+    background: #65656d;
+}
+
+.btn-menu:active {
+    background: black;
+}
+
+/* -------------------------- Nav -------------------------- */
+nav {
+    width: 100%;
+    height: 100px;
+    background-color: #333645;
+}
+
+/* -------------------------- Nav Buttons -------------------------- */
+.nav-buttons {
+    width: 62%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    border-left: 1px solid rgba(255,255,255,0.1);
+    border-right: 1px solid rgba(0,0,0,0.25);
+}
+
+.nav-btn-style {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-right: 1px solid rgba(255,255,255,0.1);
+    border-left: 1px solid rgba(0,0,0,0.25);
+}
+
+/* -------------------------- Nav Buttons on Hover -------------------------- */
+.web-design:hover {
+    background: #926FB1;
+}
+
+.it-support:hover {
+    background: #4183D7;
+}
+
+.tel-services:hover {
+    background: #D64541;
+}
+
+.bespoke-software:hover {
+    background: #67809F;
+}
+
+.digital-marketing:hover {
+    background: #2ECC71;
+}
+
+.cyber-security:hover {
+    background: #F62459;
+}
+
+/* -------------------------- Carousel -------------------------- */
+.main-image-container {
+    border-top: 1px solid rgba(51,54,69,0.5);
+}
+
+.main-image {
+    background-image: linear-gradient(to left, rgba(0,0,0,0) 25%, rgba(0,0,0,1) 100%), url('../images/body-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: calc(100vh - 211px);
+}
