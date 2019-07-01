@@ -1,22 +1,18 @@
 /* -------------------------- Main Styles -------------------------- */
-html {
+body {
     font-family: 'Poppins', sans-serif;
 }
 
 /* -------------------------- Header -------------------------- */
 header {
     height: 110px;
-    width: 62%;
+    width: 1100px;
     margin: auto;
 }
 
 /* -------------------------- Logo -------------------------- */
-.logo {
-    width: 405px;
-    height: 75px;
+header img {
     margin-top: 20px;
-    position: absolute;
-    background: url("../images/f-logo.png") no-repeat;
     cursor: pointer;
 }
 
@@ -27,32 +23,44 @@ header {
     margin-top: 26px;
 }
 
-.btn-support {
-    width: 130px;
-    height: 55px;
-    background: #4183d7;
+.btn-support,
+.btn-contact,
+.btn-menu,
+.btn-call {
     color: white;
     border: transparent;
+    height: 55px;
     border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.btn-support,
+.btn-contact {
+    width: 130px;
+}
+
+.btn-support {
+    background: #4183d7;
 }
 
 .btn-contact {
-    width: 130px;
-    height: 55px;
     background: #999aa2;
-    color: white;
-    border: transparent;
-    border-radius: 4px;
-    margin-left: 20px;
 }
 
 .btn-menu {
     width: 55px;
-    height: 55px;
     background: #333645;
-    color: white;
-    border: transparent;
-    border-radius: 4px;
+}
+
+.btn-call {
+    font-size: 30px;
+    color: black;
+    background: transparent;
+    margin-right: 10px
+}
+
+.btn-contact,
+.btn-menu {
     margin-left: 20px;
 }
 
@@ -90,14 +98,21 @@ nav {
     width: 100%;
     height: 100px;
     background-color: #333645;
+    text-transform: uppercase;
+}
+
+.nav-buttons span {
+    font-size: 10px;
 }
 
 /* -------------------------- Nav Buttons -------------------------- */
 .nav-buttons {
-    width: 62%;
+    width: 1100px;
     height: 100%;
     margin: auto;
     display: flex;
+    color: white;
+    text-align: center;
     border-left: 1px solid rgba(255,255,255,0.1);
     border-right: 1px solid rgba(0,0,0,0.25);
 }
@@ -133,6 +148,40 @@ nav {
 
 .cyber-security:hover {
     background: #F62459;
+}
+
+/* -------------------------- Icons -------------------------- */
+.nav-buttons .fas {
+    font-size: 20px;
+    margin: 20px 0 5px;
+}
+
+.nav-buttons .fa-code {
+    color: #926FB1;
+}
+
+.nav-buttons .fa-desktop {
+    color: #4183D7;
+}
+
+.nav-buttons .fa-phone {
+    color: #D64541;
+}
+
+.nav-buttons .fa-th {
+    color: #67809F;
+}
+
+.nav-buttons .fa-signal {
+    color: #2ECC71;
+}
+
+.nav-buttons .fa-shield-alt {
+    color: #F62459;
+}
+
+.nav-btn-style:hover .fas {
+    color: white;
 }
 
 /* -------------------------- Carousel -------------------------- */

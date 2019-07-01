@@ -1,0 +1,45 @@
+@media (max-width: 1234px) {
+  header,
+  .nav-buttons {
+    width: 850px;
+  }
+}
+
+@media (max-width: 972px) {
+  header {
+    width: 750px;
+  }
+  .btn-support,
+  .btn-contact,
+  nav {
+    display: none;
+  }
+  .main-image {
+    height: calc(100vh - 111px);
+  }
+}
+
+@media (max-width: 788px) {
+  header {
+    width: 100%;
+  }
+  header img {
+    margin-left: 20px;
+    max-width: 58vw;
+  }
+  .btn-menu {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 604px) {
+  header img {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 787px) {
+  .btn-call {
+    display: none;
+  }
+}
