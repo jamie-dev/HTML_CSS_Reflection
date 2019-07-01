@@ -6,7 +6,7 @@ body {
 /* -------------------------- Header -------------------------- */
 header {
     height: 110px;
-    width: 1100px;
+    width: 1200px;
     margin: auto;
 }
 
@@ -32,6 +32,7 @@ header img {
     height: 55px;
     border-radius: 4px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .btn-support,
@@ -64,20 +65,22 @@ header img {
     margin-left: 20px;
 }
 
+.fa-mouse-pointer,
+.fa-paper-plane {
+    padding-right: 5px;
+}
+
 /* -------------------------- Buttons on Hover -------------------------- */
 .btn-support:hover {
     background: #2a6ec6;
-    cursor: pointer;
 }
 
 .btn-contact:hover {
     background: #84858f;
-    cursor: pointer;
 }
 
 .btn-menu:hover {
     background: #22242e;
-    cursor: pointer;
 }
 
 /* -------------------------- Button Active -------------------------- */
@@ -107,7 +110,7 @@ nav {
 
 /* -------------------------- Nav Buttons -------------------------- */
 .nav-buttons {
-    width: 1100px;
+    width: 1200px;
     height: 100%;
     margin: auto;
     display: flex;
@@ -195,4 +198,52 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
     height: calc(100vh - 211px);
+}
+
+/* -------------------------- Image Content -------------------------- */
+.image-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    color: white;
+}
+
+.image-content h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin: 0;
+    padding-top: 180px;
+}
+
+.image-content p {
+    font-size: 20px;
+    line-height: 35px;
+    margin-bottom: 35px;
+}
+
+.image-content span {
+    text-transform: capitalize;
+}
+
+/* -------------------------- Image Content Button -------------------------- */
+.find-more {
+    width: 220px;
+    height: 55px;
+    font-size: 20px;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    background: #926FB1;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.find-more .fas {
+    padding-left: 10px;
+}
+
+/* -------------------------- Image Button Hover -------------------------- */
+.find-more:hover{
+    background: #7E57A0;
 }

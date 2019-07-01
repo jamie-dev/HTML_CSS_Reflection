@@ -1,5 +1,6 @@
 @media (max-width: 1234px) {
   header,
+  .image-content,
   .nav-buttons {
     width: 850px;
   }
@@ -9,13 +10,20 @@
   header {
     width: 750px;
   }
+  nav,
   .btn-support,
-  .btn-contact,
-  nav {
+  .btn-contact {
     display: none;
   }
   .main-image {
     height: calc(100vh - 111px);
+  }
+  .image-content {
+    text-align: center;
+    width: 100%;
+  }
+  .image-content h1 {
+    padding-top: 220px;
   }
 }
 
@@ -32,13 +40,14 @@
   }
 }
 
-@media (max-width: 604px) {
+@media (max-width: 644px) {
   header img {
     margin-top: 30px;
+
   }
 }
 
-@media (min-width: 787px) {
+@media (min-width: 769px) {
   .btn-call {
     display: none;
   }
