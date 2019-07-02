@@ -253,10 +253,6 @@ nav {
     margin: 40px 20px;
 }
 
-.block:hover {
-    border: none;
-}
-
 .block {
     width: 100%;
     height: 300px;
@@ -268,4 +264,187 @@ nav {
     padding: 30px;
     margin: 30px 0;
     text-align: center;
+    text-transform: capitalize;
+    font-size: 9px;
+}
+
+.block h1 {
+    margin-top: 20px;
+    font-weight: 100;
+}
+
+.block p {
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: none;
+}
+
+.block p span {
+    text-transform: capitalize;
+}
+
+.block h1 span {
+    text-transform: uppercase;
+}
+
+.block hr {
+    width: 28px;
+    height: 3px;
+    background: black;
+    border: none;
+}
+
+.block:hover h1,
+.block:hover p {
+    color: white;
+}
+
+.block:hover hr {
+    background: white;
+}
+
+.block:hover {
+    border: none;
+}
+
+/* -------------------------- Block Link Icons -------------------------- */
+.block-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    margin: auto;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+}
+
+.block:hover .block-icon {
+    background: white;
+}
+
+.block-icon i {
+    margin-top: 20px;
+}
+
+/* -------------------------- Block Icon Colors -------------------------- */
+.wd-icon {
+    background: #926FB1;
+}
+
+.is-icon {
+    background: #4183D7;
+}
+
+.ts-icon {
+    background: #D64541;
+}
+
+.bs-icon {
+    background: #67809F;
+}
+
+.dm-icon {
+    background: #2ECC71;
+}
+
+.cs-icon {
+    background: #F62459;
+}
+
+/* -------------------------- Block Icon Hover -------------------------- */
+.block:hover .wd-icon {
+    color: #926FB1;
+}
+
+.block:hover .is-icon {
+    color: #4183D7;
+}
+
+.block:hover .ts-icon {
+    color: #D64541;
+}
+
+.block:hover .bs-icon {
+    color: #67809F;
+}
+
+.block:hover .dm-icon {
+    color: #2ECC71;
+}
+
+.block:hover .cs-icon {
+    color: #F62459;
+}
+
+/* -------------------------- Media Queries -------------------------- */
+@media (max-width: 1234px) {
+    header,
+    .image-content,
+    .nav-buttons {
+        width: 850px;
+    }
+}
+
+@media (min-width: 1235px) {
+    .block-links {
+        max-width: 1200px;
+        margin: 40px auto;
+    }
+    .block-links .block:not(.block-alt) {
+        max-width: calc(25% - 40px)
+    }
+}
+
+@media (max-width: 972px) {
+    header {
+        width: 750px;
+    }
+    nav,
+    .btn-support,
+    .btn-contact {
+        display: none;
+    }
+    .main-image {
+        height: calc(100vh - 111px);
+    }
+    .image-content {
+        text-align: center;
+        width: 100%;
+    }
+    .image-content h1 {
+        padding-top: 280px;
+    }
+}
+
+@media (max-width: 788px) {
+    header {
+        width: 100%;
+    }
+    header img {
+        margin-left: 20px;
+        max-width: 58vw;
+    }
+    .btn-menu {
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .btn-call {
+        display: none;
+    }
+    .block-links {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .block {
+        width: calc(50% - 40px);
+        margin: 20px;
+    }
+}
+
+@media (max-width: 644px) {
+    header img {
+        margin-top: 30px;
+    }
 }
