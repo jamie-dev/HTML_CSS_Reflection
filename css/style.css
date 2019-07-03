@@ -1,6 +1,7 @@
 /* -------------------------- Main Styles -------------------------- */
 body {
     font-family: 'Poppins', sans-serif;
+    padding-bottom: 200px;
 }
 
 /* -------------------------- Header -------------------------- */
@@ -402,7 +403,7 @@ nav {
 .our-culture {
     width: 100%;
     color: white;
-    padding: 20px 0;
+    padding: 20px 0 50px;
     display: flex;
     background: #333645 url("../images/branded.png") no-repeat center right;
     background-size: auto 100%;
@@ -418,9 +419,21 @@ nav {
     line-height: 30px;
 }
 
+.culture-button {
+    width: 160px;
+    height: 40px;
+    color: #333645;
+    padding-top: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    background: white;
+    border-radius: 3px;
+}
+
 .culture-content h1 {
-    margin: 40px 0;
-    font-size: 40px;
+    margin: 30px 0;
+    font-size: 35px;
     font-weight: 100;
     text-transform: uppercase;
 }
@@ -429,8 +442,16 @@ nav {
     margin: 25px 0;
 }
 
-.culture-content strong {
-    font-weight: 550;
+.culture-content span {
+    text-transform: capitalize;
+}
+
+.culture-content bdi {
+    text-transform: uppercase;
+}
+
+.culture-button i {
+    margin-left: 5px;
 }
 
 /* -------------------------- Media Queries -------------------------- */
