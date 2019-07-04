@@ -218,7 +218,7 @@ nav {
     text-transform: uppercase;
     font-weight: 100;
     margin: 0;
-    padding-top: 180px;
+    padding-top: 280px;
 }
 
 .image-content p {
@@ -452,6 +452,34 @@ nav {
 
 .culture-button i {
     margin-left: 5px;
+}
+
+/* -------------------------- News -------------------------- */
+.news-header {
+    width: 100%;
+    height: 110px;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.1);
+}
+
+.title-container {
+    width: 1200px;
+    margin: auto;
+}
+
+.title-container h1 {
+    width: 77px;
+    margin: 0;
+    padding: 39.5px 0;
+    color: #333645;
+    font-size: 24px;
+    font-weight: 100;
+    text-transform: uppercase;
+    border-bottom: 5px solid #333645;
+} 
+
+.news-container {
+    width: 1200px;
+    margin: auto;
 }
 
 /* -------------------------- Media Queries -------------------------- */
