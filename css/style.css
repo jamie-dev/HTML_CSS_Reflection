@@ -1,566 +1,685 @@
 /* -------------------------- Main Styles -------------------------- */
 body {
-    font-family: 'Poppins', sans-serif;
-    padding-bottom: 200px;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 400px;
 }
 
 /* -------------------------- Header -------------------------- */
 header {
-    height: 110px;
-    width: 1200px;
-    margin: auto;
+  height: 110px;
+  width: 1200px;
+  margin: auto;
 }
 
 .sticky-header {
-    position: sticky;
-    top: 0;
-    background: white;
+  position: sticky;
+  top: 0;
+  background: white;
 }
 
 /* -------------------------- Logo -------------------------- */
 header img {
-    margin-top: 20px;
-    cursor: pointer;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
 /* -------------------------- Call to Action Buttons -------------------------- */
 .cta {
-    float: right;
-    display: flex;
-    margin-top: 26px;
+  float: right;
+  display: flex;
+  margin-top: 26px;
 }
 
 .btn-support,
 .btn-contact,
 .btn-menu,
 .btn-call {
-    color: white;
-    border: transparent;
-    height: 55px;
-    border-radius: 4px;
-    text-transform: uppercase;
-    cursor: pointer;
+  color: white;
+  border: transparent;
+  height: 55px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .btn-support,
 .btn-contact {
-    width: 130px;
+  width: 130px;
 }
 
 .btn-support {
-    background: #4183d7;
+  background: #4183d7;
 }
 
 .btn-contact {
-    background: #999aa2;
+  background: #999aa2;
 }
 
 .btn-menu {
-    width: 55px;
-    background: #333645;
+  width: 55px;
+  background: #333645;
 }
 
 .btn-call {
-    font-size: 30px;
-    color: black;
-    background: transparent;
-    margin-right: 10px
+  font-size: 30px;
+  color: black;
+  background: transparent;
+  margin-right: 10px;
 }
 
 .btn-contact,
 .btn-menu {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .fa-mouse-pointer,
 .fa-paper-plane {
-    padding-right: 5px;
+  padding-right: 5px;
 }
 
 /* -------------------------- Buttons on Hover -------------------------- */
 .btn-support:hover {
-    background: #2a6ec6;
+  background: #2a6ec6;
 }
 
 .btn-contact:hover {
-    background: #84858f;
+  background: #84858f;
 }
 
 .btn-menu:hover {
-    background: #22242e;
+  background: #22242e;
 }
 
 /* -------------------------- Button Active -------------------------- */
 .btn-support:active {
-    background: #195199;
+  background: #195199;
 }
 
 .btn-contact:active {
-    background: #65656d;
+  background: #65656d;
 }
 
 .btn-menu:active {
-    background: black;
+  background: black;
 }
 
 /* -------------------------- Nav -------------------------- */
 nav {
-    width: 100%;
-    height: 100px;
-    background-color: #333645;
-    text-transform: uppercase;
+  width: 100%;
+  height: 100px;
+  background-color: #333645;
+  text-transform: uppercase;
 }
 
 .nav-buttons span {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 /* -------------------------- Nav Buttons -------------------------- */
 .nav-buttons {
-    width: 1200px;
-    height: 100%;
-    margin: auto;
-    display: flex;
-    color: white;
-    text-align: center;
-    border-left: 1px solid rgba(255,255,255,0.1);
-    border-right: 1px solid rgba(0,0,0,0.25);
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  color: white;
+  text-align: center;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 .nav-btn-style {
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    border-right: 1px solid rgba(255,255,255,0.1);
-    border-left: 1px solid rgba(0,0,0,0.25);
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 /* -------------------------- Nav Buttons on Hover -------------------------- */
 .web-design:hover {
-    background: #926FB1;
+  background: #926fb1;
 }
 
 .it-support:hover {
-    background: #4183D7;
+  background: #4183d7;
 }
 
 .tel-services:hover {
-    background: #D64541;
+  background: #d64541;
 }
 
 .bespoke-software:hover {
-    background: #67809F;
+  background: #67809f;
 }
 
 .digital-marketing:hover {
-    background: #2ECC71;
+  background: #2ecc71;
 }
 
 .cyber-security:hover {
-    background: #F62459;
+  background: #f62459;
 }
 
 /* -------------------------- Nav Icons -------------------------- */
 .nav-buttons .fas {
-    font-size: 20px;
-    margin: 20px 0 5px;
+  font-size: 20px;
+  margin: 20px 0 5px;
 }
 
 .nav-buttons .fa-code {
-    color: #926FB1;
+  color: #926fb1;
 }
 
 .nav-buttons .fa-desktop {
-    color: #4183D7;
+  color: #4183d7;
 }
 
 .nav-buttons .fa-phone {
-    color: #D64541;
+  color: #d64541;
 }
 
 .nav-buttons .fa-th {
-    color: #67809F;
+  color: #67809f;
 }
 
 .nav-buttons .fa-signal {
-    color: #2ECC71;
+  color: #2ecc71;
 }
 
 .nav-buttons .fa-shield-alt {
-    color: #F62459;
+  color: #f62459;
 }
 
 .nav-btn-style:hover .fas {
-    color: white;
+  color: white;
 }
 
 /* -------------------------- Nav Links -------------------------- */
 .nav-links {
-    width: 100%;
-    background: blue;
+  width: 100%;
+  background: blue;
 }
 
 /* -------------------------- Carousel -------------------------- */
 .main-image-container {
-    border-top: 1px solid rgba(51,54,69,0.5);
+  border-top: 1px solid rgba(51, 54, 69, 0.5);
 }
 
 .main-image {
-    background-image: linear-gradient(to left, rgba(0,0,0,0) 25%, rgba(0,0,0,1) 100%), url('../images/body-image.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: calc(100vh - 211px);
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0) 25%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("../images/body-image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: calc(100vh - 211px);
 }
 
 /* -------------------------- Image Content -------------------------- */
 .image-content {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    color: white;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  color: white;
 }
 
 .image-content h1 {
-    font-size: 50px;
-    text-transform: uppercase;
-    font-weight: 100;
-    margin: 0;
-    padding-top: 280px;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 100;
+  margin: 0;
+  padding-top: 280px;
 }
 
 .image-content p {
-    font-size: 20px;
-    line-height: 35px;
-    margin-bottom: 35px;
+  font-size: 20px;
+  line-height: 35px;
+  margin-bottom: 35px;
 }
 
 .image-content span {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 /* -------------------------- Image Content Button -------------------------- */
-.find-more {
-    width: 220px;
-    height: 55px;
-    font-size: 20px;
-    border-radius: 4px;
-    border: none;
-    color: white;
-    background: #926FB1;
-    text-transform: uppercase;
-    cursor: pointer;
+.wd-button {
+  width: 220px;
+  height: 40px;
+  padding-top: 15px;
+  margin: auto;
+  font-size: 20px;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  background: #926fb1;
+  text-transform: uppercase;
+  display: block;
+  text-decoration: none;
+  text-align: center;
 }
 
-.find-more .fas {
-    padding-left: 10px;
+.wd-button .fas {
+  padding-left: 10px;
 }
 
-/* -------------------------- Image Button Hover/Active -------------------------- */
-.find-more:hover{
-    background: #7E57A0;
+.wd-button:hover {
+  background: #7e57a0;
 }
 
 /* -------------------------- Block Links -------------------------- */
 .block-links {
-    margin: 40px 20px;
+  margin: 40px 20px;
 }
 
 .block {
-    width: 100%;
-    background: white;
-    border-radius: 3px;
-    border: 1px solid #ccc;
-    box-shadow: 0 3px 35px rgba(0,0,0,0.1);
-    box-sizing: border-box;
-    padding: 30px;
-    margin: 30px 0;
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 9px;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  background: white;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  padding: 30px;
+  margin: 30px 0;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 9px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #333645;
 }
 
 .block h1 {
-    margin-top: 20px;
-    font-weight: 100;
+  margin-top: 20px;
+  font-weight: 100;
 }
 
 .block p {
-    font-size: 14px;
-    line-height: 20px;
-    text-transform: none;
-    flex-grow: 1;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: none;
+  flex-grow: 1;
 }
 
 .block p span {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 .block h1 span {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .block hr {
-    width: 28px;
-    height: 3px;
-    background: black;
-    border: none;
+  width: 28px;
+  height: 3px;
+  background: black;
+  border: none;
 }
 
 .block:hover h1,
 .block:hover p {
-    color: white;
+  color: white;
 }
 
 .block:hover hr {
-    background: white;
+  background: white;
 }
 
 .block:hover {
-    border: 1px solid transparent;
+  border: 1px solid transparent;
 }
 
 /* -------------------------- Block Link Icons -------------------------- */
 .block-icon {
-    width: 60px;
-    height: 60px;
-    font-size: 20px;
-    margin: auto;
-    border-radius: 50%;
-    text-align: center;
-    color: white;
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+  margin: auto;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
 }
 
 .block:hover .block-icon {
-    background: white;
+  background: white;
 }
 
 .block-icon i {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 /* -------------------------- Block Icon Colors -------------------------- */
 .wd-icon {
-    background: #926FB1;
+  background: #926fb1;
 }
 
 .is-icon {
-    background: #4183D7;
+  background: #4183d7;
 }
 
 .ts-icon {
-    background: #D64541;
+  background: #d64541;
 }
 
 .bs-icon {
-    background: #67809F;
+  background: #67809f;
 }
 
 .dm-icon {
-    background: #2ECC71;
+  background: #2ecc71;
 }
 
 .cs-icon {
-    background: #F62459;
+  background: #f62459;
 }
 
 /* -------------------------- Block Icon Hover -------------------------- */
 .block:hover .wd-icon {
-    color: #926FB1;
+  color: #926fb1;
 }
 
 .block:hover .is-icon {
-    color: #4183D7;
+  color: #4183d7;
 }
 
 .block:hover .ts-icon {
-    color: #D64541;
+  color: #d64541;
 }
 
 .block:hover .bs-icon {
-    color: #67809F;
+  color: #67809f;
 }
 
 .block:hover .dm-icon {
-    color: #2ECC71;
+  color: #2ecc71;
 }
 
 .block:hover .cs-icon {
-    color: #F62459;
+  color: #f62459;
 }
 
 /* -------------------------- Block Button -------------------------- */
 .block-button {
-    width: 160px;
-    height: 40px;
-    border-radius: 4px;
-    margin: auto;
-    padding-top: 15px;
-    color: white;
-    font-size: 20px;
-    text-transform: uppercase;
+  width: 160px;
+  height: 40px;
+  border-radius: 4px;
+  margin: auto;
+  padding-top: 15px;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 
 .block:hover .block-button {
-    background: white;
+  background: white;
 }
 
 /* -------------------------- Our Culture -------------------------- */
 .our-culture {
-    width: 100%;
-    color: white;
-    padding: 20px 0 50px;
-    display: flex;
-    background: #333645 url("../images/branded.png") no-repeat center right;
-    background-size: auto 100%;
+  width: 100%;
+  color: white;
+  padding: 20px 0 50px;
+  display: flex;
+  background: #333645 url("../images/branded.png") no-repeat center right;
+  background-size: auto 100%;
 }
 
 .culture-container {
-    width: 1200px;
-    margin: auto;
+  width: 1200px;
+  margin: auto;
 }
 
 .culture-content {
-    width: 100%;
-    max-width: 600px;
-    line-height: 30px;
+  width: 100%;
+  max-width: 600px;
+  line-height: 30px;
 }
 
 .culture-button {
-    width: 160px;
-    height: 40px;
-    color: #333645;
-    padding-top: 10px;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    background: white;
-    border-radius: 3px;
+  width: 160px;
+  height: 40px;
+  color: #333645;
+  padding-top: 10px;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  background: white;
+  border-radius: 3px;
 }
 
 .culture-content h1 {
-    margin: 30px 0;
-    font-size: 35px;
-    font-weight: 100;
-    text-transform: uppercase;
+  margin: 30px 0;
+  font-size: 35px;
+  font-weight: 100;
+  text-transform: uppercase;
 }
 
 .culture-content p {
-    margin: 25px 0;
+  margin: 25px 0;
 }
 
 .culture-content span {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 .culture-content bdi {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .culture-button i {
-    margin-left: 5px;
+  margin-left: 5px;
 }
 
 /* -------------------------- News -------------------------- */
 .news-header {
-    width: 100%;
-    height: 110px;
-    box-shadow: 0 5px 35px rgba(0,0,0,0.1);
+  width: 100%;
+  height: 110px;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
 }
 
 .title-container {
-    width: 1200px;
-    margin: auto;
+  width: 1200px;
+  margin: auto;
 }
 
 .title-container h1 {
-    width: 77px;
-    margin: 0;
-    padding: 39.5px 0;
-    color: #333645;
-    font-size: 24px;
-    font-weight: 100;
-    text-transform: uppercase;
-    border-bottom: 5px solid #333645;
-} 
+  width: 77px;
+  margin: 0;
+  padding: 39.5px 0;
+  color: #333645;
+  font-size: 24px;
+  font-weight: 100;
+  text-transform: uppercase;
+  border-bottom: 5px solid #333645;
+}
 
 .news-container {
-    width: 1200px;
-    margin: auto;
+  width: 90%;
+  margin: 50px auto;
+}
+
+.card {
+  margin-bottom: 30px;
+}
+
+.card,
+.card-image {
+  width: 100%;
+}
+
+.card-image {
+  display: block;
+  border-radius: 3px 3px 0 0;
+}
+
+.card-content {
+  padding: 30px;
+  background: white;
+  border-radius: 0 0 3px 3px;
+  border: 1px solid #ccc;
+  border-top: none;
+  box-shadow: 0 3px 35px rgba(0,0,0,0.1);
+}
+
+.card-content .wd-button {
+  width: 150px;
+  margin: 30px 0;
+}
+
+.card-content h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.card-content h3 a {
+  color: #926fb1;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.card-content h3 span {
+  text-transform: lowercase;
+}
+
+.card-content h3 a bdi {
+  text-transform: uppercase;
+}
+
+.card-content h3 a:hover {
+  text-decoration: underline;
+}
+
+.card-content p {
+  color: grey;
+  font-size: 14px;
+}
+
+.card-content p span {
+  text-transform: capitalize;
+}
+
+.card-content hr {
+  background: #ccc;
 }
 
 /* -------------------------- Media Queries -------------------------- */
 @media (max-width: 1234px) {
-    header,
-    .image-content,
-    .nav-buttons {
-        width: 850px;
-    }
+  header,
+  .image-content,
+  .nav-buttons,
+  .culture-container,
+  .title-container {
+    width: 850px;
+  }
+  .culture-content {
+    max-width: 100%;
+  }
 }
 
 @media (min-width: 1235px) {
-    .block-links {
-        max-width: 1200px;
-        margin: 20px auto;
-    }
-    .block-links .block:not(.block-alt) {
-        max-width: calc(25% - 30px)
-    }
+  .block-links {
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+  .block-links .block:not(.block-alt) {
+    max-width: calc(25% - 30px);
+  }
+  .news-container {
+    width: 1200px;
+  }
+  .news-container .card {
+    width: calc(33.33% - 20px);
+  }
+  .news-container .card-alt {
+    display: block;
+  }
 }
 
 @media (max-width: 972px) {
-    header {
-        width: 750px;
-    }
-    nav,
-    .btn-support,
-    .btn-contact {
-        display: none;
-    }
-    .main-image {
-        height: calc(100vh - 111px);
-    }
-    .image-content {
-        text-align: center;
-        width: 100%;
-    }
-    .image-content h1 {
-        padding-top: 280px;
-    }
+  header,
+  .title-container {
+    width: 750px;
+  }
+  nav,
+  .btn-support,
+  .btn-contact {
+    display: none;
+  }
+  .main-image {
+    height: calc(100vh - 111px);
+  }
+  .image-content {
+    text-align: center;
+    width: 100%;
+  }
+  .image-content h1 {
+    padding-top: 280px;
+  }
+  .our-culture {
+    background: #333645;
+  }
+  .culture-content {
+    max-width: 90%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 971px) {
+  .wd-button {
+    margin: 0;
+  }
 }
 
 @media (max-width: 788px) {
-    header {
-        width: 100%;
-    }
-    header img {
-        margin-left: 20px;
-        max-width: 58vw;
-    }
-    .btn-menu {
-        margin-right: 20px;
-    }
+  header {
+    width: 100%;
+  }
+  header img {
+    margin-left: 20px;
+    max-width: 58vw;
+  }
+  .btn-menu {
+    margin-right: 20px;
+  }
+  .title-container {
+    width: 90%;
+    margin: auto;
+  }
 }
 
 @media (min-width: 768px) {
-    .btn-call {
-        display: none;
-    }
-    .block-links {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .block {
-        width: calc(50% - 20px);
-        margin: 20px 0;
-    }
+  .btn-call {
+    display: none;
+  }
+  .block-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .block {
+    width: calc(50% - 20px);
+    margin: 20px 0;
+  }
+  .news-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .card {
+    width: calc(50% - 20px);
+  }
+  .card-alt {
+    display: none;
+  }
 }
 
 @media (max-width: 644px) {
-    header img {
-        margin-top: 30px;
-    }
+  header img {
+    margin-top: 30px;
+  }
 }
