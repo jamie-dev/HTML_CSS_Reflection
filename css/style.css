@@ -11,8 +11,10 @@ header {
     margin: auto;
 }
 
-.header-sticky {
-    /* position: fixed; */
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background: white;
 }
 
 /* -------------------------- Logo -------------------------- */
@@ -158,7 +160,7 @@ nav {
     background: #F62459;
 }
 
-/* -------------------------- Icons -------------------------- */
+/* -------------------------- Nav Icons -------------------------- */
 .nav-buttons .fas {
     font-size: 20px;
     margin: 20px 0 5px;
@@ -190,6 +192,12 @@ nav {
 
 .nav-btn-style:hover .fas {
     color: white;
+}
+
+/* -------------------------- Nav Links -------------------------- */
+.nav-links {
+    width: 100%;
+    background: blue;
 }
 
 /* -------------------------- Carousel -------------------------- */
@@ -415,7 +423,8 @@ nav {
 }
 
 .culture-content {
-    width: 45%;
+    width: 100%;
+    max-width: 600px;
     line-height: 30px;
 }
 
@@ -497,7 +506,7 @@ nav {
         margin: 20px auto;
     }
     .block-links .block:not(.block-alt) {
-        max-width: calc(25% - 40px)
+        max-width: calc(25% - 30px)
     }
 }
 
@@ -542,10 +551,11 @@ nav {
     .block-links {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
     .block {
-        width: calc(50% - 40px);
-        margin: 20px;
+        width: calc(50% - 20px);
+        margin: 20px 0;
     }
 }
 
