@@ -12,6 +12,7 @@ header {
 }
 
 .sticky-header {
+  z-index: 10;
   position: sticky;
   top: 0;
   background: white;
@@ -36,8 +37,10 @@ header img {
 .btn-call {
   color: white;
   border: transparent;
-  height: 55px;
+  height: 100%;
   border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -45,6 +48,7 @@ header img {
 .btn-support,
 .btn-contact {
   width: 130px;
+  padding: 19px 3px;
 }
 
 .btn-support {
@@ -58,6 +62,7 @@ header img {
 .btn-menu {
   width: 55px;
   background: #333645;
+  padding: 10px 0;
 }
 
 .btn-call {
@@ -65,6 +70,7 @@ header img {
   color: black;
   background: transparent;
   margin-right: 10px;
+  margin-top: 10px;
 }
 
 .btn-contact,
@@ -109,6 +115,7 @@ nav {
   height: 100px;
   background-color: #333645;
   text-transform: uppercase;
+  position: relative;
 }
 
 .nav-buttons span {
@@ -132,9 +139,13 @@ nav {
   height: 100%;
   cursor: pointer;
   color: white;
-  text-decoration: none;
   border-right: 1px solid rgba(255, 255, 255, 0.1);
   border-left: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.nav-buttons a {
+  color: white;
+  text-decoration: none;
 }
 
 /* -------------------------- Nav Buttons on Hover -------------------------- */
@@ -197,9 +208,67 @@ nav {
 }
 
 /* -------------------------- Nav Links -------------------------- */
-.nav-links {
+.nav-drop {
   width: 100%;
-  background: blue;
+  display: none;
+  bottom: -42px;
+  left: 0;
+  list-style-type: none;
+  position: absolute;
+}
+
+.nav-drop li {
+  display: inline-block;
+  padding: 12px 30px 12px 0;
+}
+
+.nav-drop ul {
+  width: 1200px;
+  margin: auto;
+  padding: 0;
+  text-align: left;
+}
+
+.nav-drop li::after {
+  content: '';
+  width: 7px;
+  height: 2px;
+  background: white;
+  display: inline-block;
+  margin: 0 0 5px 35px;
+}
+
+.nav-drop li:last-child:after {
+  display: none;
+}
+
+/* -------------------------- Nav Links Hover -------------------------- */
+.nav-btn-style:hover .nav-drop {
+  display: block;
+}
+
+.web-design:hover .nav-drop {
+  background: #79539a;
+}
+
+.it-support:hover .nav-drop {
+  background: #286abd;
+}
+
+.tel-services:hover .nav-drop {
+  background: #bc2c28;
+}
+
+.bespoke-software:hover .nav-drop {
+  background: #526781;
+}
+
+.digital-marketing:hover .nav-drop {
+  background: #25a25a;
+}
+
+.cyber-security:hover .nav-drop {
+  background: #de093f;
 }
 
 /* -------------------------- Carousel -------------------------- */
@@ -208,12 +277,7 @@ nav {
 }
 
 .main-image {
-  background-image: linear-gradient(
-      to left,
-      rgba(0, 0, 0, 0) 25%,
-      rgba(0, 0, 0, 1) 100%
-    ),
-    url("../images/body-image.jpg");
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%), url("../images/body-image.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -482,7 +546,7 @@ nav {
 
 /* -------------------------- News -------------------------- */
 article {
-  padding-bottom: 5px;
+  padding-bottom: 20px;
   box-shadow: 0 3px 35px rgba(0,0,0,0.1);
 }
 
@@ -510,11 +574,13 @@ article {
 
 .news-container {
   width: 90%;
-  margin: 50px auto;
+  margin: auto;
+  margin-top: 50px;
 }
 
 .card {
   margin-bottom: 30px;
+  position: relative;
 }
 
 .card,
@@ -532,9 +598,23 @@ article {
   transition: .2s ease-in-out;
 }
 
-.card-image:hover {
-  filter: opacity(.8);
-  transform: scale(1.1);
+.image-tag {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  color: #fff;
+  background-color: #926fb1;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0 10px;
+  line-height: 1.438rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  z-index: 1;
+}
+
+.image-tag:hover {
+  text-decoration: underline;
 }
 
 .card-content {
@@ -591,7 +671,7 @@ article {
 .posted-by {
   width: 100%;
   margin-top: 10px;
-  padding: 30px 0 10px;
+  padding-top: 25px;
   border-top: 1px solid #ccc;
 }
 
@@ -676,6 +756,10 @@ article {
 @media (min-width: 971px) {
   .wd-button {
     margin: 0;
+  }
+  .card-image:hover {
+    filter: opacity(.8);
+    transform: scale(1.1);
   }
 }
 
