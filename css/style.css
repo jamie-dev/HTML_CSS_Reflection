@@ -219,14 +219,14 @@ nav {
 
 .nav-drop li {
   display: inline-block;
-  padding: 12px 30px 12px 0;
+  margin: 12px 30px 12px 0;
 }
 
 .nav-drop ul {
   width: 1200px;
   margin: auto;
   padding: 0;
-  text-align: left;
+  /* text-align: left; */
 }
 
 .nav-drop li::after {
@@ -697,11 +697,22 @@ article {
   .image-content,
   .nav-buttons,
   .culture-container,
-  .title-container {
+  .title-container,
+  .nav-drop ul {
     width: 850px;
   }
   .culture-content {
     max-width: 100%;
+  }
+  .nav-drop {
+    bottom: -38px;
+    font-size: 13px;
+  }
+  .nav-drop li {
+    margin-right: 10px;
+  }
+  .nav-drop li::after {
+    margin-left: 10px;
   }
 }
 
