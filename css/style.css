@@ -226,7 +226,7 @@ nav {
   width: 1200px;
   margin: auto;
   padding: 0;
-  /* text-align: left; */
+  text-align: left;
 }
 
 .nav-drop li::after {
@@ -602,12 +602,11 @@ article {
   position: absolute;
   top: 10px;
   right: 0;
-  color: #fff;
+  color: white;
   background-color: #926fb1;
-  font-size: 0.75rem;
+  font-size: 13px;
   font-weight: 600;
-  padding: 0 10px;
-  line-height: 1.438rem;
+  padding: 5px 10px 4px;
   text-transform: uppercase;
   text-decoration: none;
   z-index: 1;
@@ -615,6 +614,44 @@ article {
 
 .image-tag:hover {
   text-decoration: underline;
+}
+
+.tag-info,
+.tag-info-alt {
+  width: 150px;
+  padding: 10px 20px;
+  right: -65px;
+  bottom: 30px;
+  background: hsla(230, 15%, 24%, 0.9);
+  position: absolute;
+  font-weight: 100;
+  text-align: center;
+  text-transform: capitalize;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .4s, visibility .4s;
+}
+
+.tag-arrow,
+.tag-arrow-alt {
+  width: 0; 
+  height: 0;
+  bottom: 0;
+  bottom: -5px;
+  right: 90px;
+  position: absolute;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid hsla(230, 15%, 24%, 0.9);
+}
+
+.image-tag:hover .tag-info {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tag-info span {
+  text-transform: none;
 }
 
 .card-content {
@@ -691,14 +728,33 @@ article {
   text-transform: capitalize;
 }
 
+/* -------------------------- Clients -------------------------- */
+.clients-container {
+  width: 1200px;
+  height: 100px;
+  margin: 50px auto;
+  background: #25a25a;
+
+}
+
 /* -------------------------- Media Queries -------------------------- */
+@media (max-width: 1350px) {
+  .tag-info-alt {
+    right: 0;
+  }
+  .tag-arrow-alt {
+    right: 25px;
+  }
+}
+
 @media (max-width: 1234px) {
   header,
   .image-content,
   .nav-buttons,
   .culture-container,
   .title-container,
-  .nav-drop ul {
+  .nav-drop ul,
+  .clients-container {
     width: 850px;
   }
   .culture-content {
@@ -713,6 +769,12 @@ article {
   }
   .nav-drop li::after {
     margin-left: 10px;
+  }
+  .tag-info-alt-2 {
+    right: 0;
+  }
+  .tag-arrow-alt-2 {
+    right: 25px;
   }
 }
 
@@ -737,7 +799,8 @@ article {
 
 @media (max-width: 972px) {
   header,
-  .title-container {
+  .title-container,
+  .clients-container {
     width: 750px;
   }
   nav,
@@ -768,14 +831,15 @@ article {
   .wd-button {
     margin: 0;
   }
-  .card-image:hover {
+  .news-image:hover .card-image {
     filter: opacity(.8);
     transform: scale(1.1);
   }
 }
 
 @media (max-width: 788px) {
-  header {
+  header,
+  .clients-container {
     width: 100%;
   }
   header img {
@@ -788,6 +852,12 @@ article {
   .title-container {
     width: 90%;
     margin: auto;
+  }
+  .tag-info-small {
+    right: 0;
+  }
+  .tag-arrow-small {
+    right: 25px;
   }
 }
 
