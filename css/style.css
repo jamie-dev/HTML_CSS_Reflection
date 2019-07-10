@@ -629,14 +629,13 @@ article {
   text-transform: capitalize;
   opacity: 0;
   visibility: hidden;
-  transition: opacity .4s, visibility .4s;
+  transition: opacity .3s, visibility .3s;
 }
 
 .tag-arrow,
 .tag-arrow-alt {
   width: 0; 
   height: 0;
-  bottom: 0;
   bottom: -5px;
   right: 90px;
   position: absolute;
@@ -731,10 +730,102 @@ article {
 /* -------------------------- Clients -------------------------- */
 .clients-container {
   width: 1200px;
-  height: 100px;
-  margin: 50px auto;
-  background: #25a25a;
+  margin: 40px auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
 
+.client-content {
+  position: relative;
+  filter: grayscale();
+}
+
+.client-content img {
+  width: 100%;
+}
+
+.client-content:hover {
+  filter: none;
+}
+
+.client-content:hover .client-info {
+  opacity: 1;
+  visibility: visible;
+}
+
+.client-info {
+  width: 230px;
+  bottom: 114px;
+  left: calc(-130px + 50%);
+  background: #333645;
+  padding: 20px;
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: 13px;
+  line-height: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s, visibility .3s;
+}
+
+.client-info span {
+  text-transform: capitalize;
+}
+
+.client-info bdi {
+  text-transform: uppercase;
+}
+
+.client-info hr {
+  width: 25px;
+  height: 3px;
+  border: none;
+  background: white;
+  margin: 15px auto;
+}
+
+.client-arrow {
+  width: 0; 
+  height: 0;
+  bottom: -35px;
+  left: 95px;
+  position: absolute;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  border-top: 35px solid #343746;
+}
+
+/* -------------------------- Footer -------------------------- */
+footer {
+  width: 100%;
+  /* height: 200px; */
+  padding: 40px 0;
+  background: #333645;
+}
+
+footer h5 {
+  margin-top: 0;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  color: white;
+  font-size: 13px;
+}
+
+.footer-container {
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+  /* background: #195199; */
 }
 
 /* -------------------------- Media Queries -------------------------- */
@@ -754,7 +845,8 @@ article {
   .culture-container,
   .title-container,
   .nav-drop ul,
-  .clients-container {
+  .clients-container,
+  .footer-container {
     width: 850px;
   }
   .culture-content {
@@ -775,6 +867,12 @@ article {
   }
   .tag-arrow-alt-2 {
     right: 25px;
+  }
+  .clients-container {
+    padding: 0;
+  }
+  .clients-container img {
+    transform: scale(.85);
   }
 }
 
@@ -825,6 +923,9 @@ article {
     max-width: 90%;
     margin: auto;
   }
+  .clients-container img {
+    transform: scale(.8);
+  }
 }
 
 @media (min-width: 971px) {
@@ -858,6 +959,9 @@ article {
   }
   .tag-arrow-small {
     right: 25px;
+  }
+  .clients-container {
+    display: none;
   }
 }
 
