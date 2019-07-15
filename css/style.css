@@ -1,7 +1,21 @@
 /* -------------------------- Main Styles -------------------------- */
 body {
   font-family: "Poppins", sans-serif;
-  padding-bottom: 400px;
+}
+
+/* -------------------------- Chat Button -------------------------- */
+.chat-btn {
+  margin: 25px;
+  padding: 13px 0;
+  width: 60.42px;
+  background: #509bd6;
+  color: white;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 35px;
+  text-align: center;
+  font-size: 30px;
+  position: fixed;
+  z-index: 100;
 }
 
 /* -------------------------- Header -------------------------- */
@@ -13,7 +27,7 @@ header {
 
 .sticky-header {
   z-index: 10;
-  position: sticky;
+  /* position: sticky; */
   top: 0;
   background: white;
 }
@@ -838,7 +852,9 @@ footer ul a:hover {
   text-decoration: underline;
 }
 
-.footer-item:nth-of-type(1) ul a {
+.footer-item-container:nth-child(1)
+.footer-item:nth-of-type(1)
+ul a {
   text-transform: none;
 }
 
@@ -886,6 +902,26 @@ footer ul a:hover {
   background: #0077B5;
 }
 
+/* -------------------------- Bottom Images -------------------------- */
+
+.bottom-images {
+  width: 1200px;
+  margin: 60px auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-images img {
+  filter: grayscale();
+  transform: scale(1.2)
+}
+
+.bottom-images img:hover {
+  filter: none;
+}
+
 /* -------------------------- Media Queries -------------------------- */
 @media (max-width: 1350px) {
   .tag-info-alt {
@@ -904,7 +940,8 @@ footer ul a:hover {
   .title-container,
   .nav-drop ul,
   .clients-container,
-  .footer-container {
+  .footer-container,
+  .bottom-images {
     width: 850px;
   }
   .culture-content {
@@ -967,7 +1004,8 @@ footer ul a:hover {
   header,
   .title-container,
   .clients-container,
-  .footer-container {
+  .footer-container,
+  .bottom-images {
     width: 750px;
   }
   nav,
@@ -995,7 +1033,9 @@ footer ul a:hover {
   .clients-container img {
     transform: scale(.8);
   }
-
+  .bottom-images img {
+    transform: scale(1)
+  }
 }
 
 @media (min-width: 971px) {
@@ -1010,7 +1050,8 @@ footer ul a:hover {
 
 @media (max-width: 788px) {
   header,
-  .clients-container {
+  .clients-container,
+  .footer-item {
     width: 100%;
   }
   .footer-container {
@@ -1033,7 +1074,8 @@ footer ul a:hover {
   .tag-arrow-small {
     right: 25px;
   }
-  .clients-container {
+  .clients-container,
+  .bottom-images {
     display: none;
   }
   .footer-container {
@@ -1042,16 +1084,15 @@ footer ul a:hover {
   .footer-item-container {
     display: block;
   }
-  .footer-item {
-    width: 100%;
-  }
 }
 
 @media (min-width: 768px) {
-  .btn-call {
+  .btn-call,
+  .card-alt {
     display: none;
   }
-  .block-links {
+  .block-links,
+  .news-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -1060,15 +1101,8 @@ footer ul a:hover {
     width: calc(50% - 20px);
     margin: 20px 0;
   }
-  .news-container {
-    display: flex;
-    justify-content: space-between;
-  }
   .card {
     width: calc(50% - 20px);
-  }
-  .card-alt {
-    display: none;
   }
 }
 
