@@ -290,6 +290,7 @@ nav {
   max-width: 1200px;
   margin: auto;
   color: white;
+  padding-top: 20vh;
 }
 
 .image-content h1 {
@@ -297,7 +298,6 @@ nav {
   text-transform: uppercase;
   font-weight: 100;
   margin: 0;
-  padding-top: 280px;
 }
 
 .image-content p {
@@ -801,14 +801,13 @@ article {
 /* -------------------------- Footer -------------------------- */
 footer {
   width: 100%;
-  padding-top: 40px;
   background: #333645;
 }
 
 footer h5 {
   color: white;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 100;
 }
 
@@ -816,19 +815,22 @@ footer ul {
   list-style-type: none;
   padding: 0;
   color: white;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 13px;
+  line-height: 25px;
   text-transform: capitalize;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 footer ul span {
   text-transform: uppercase;
 }
 
+footer ul bdi {
+  text-transform: none;
+}
+
 footer ul a {
   color: white;
-  text-transform: none;
   text-decoration: none;
 }
 
@@ -836,11 +838,52 @@ footer ul a:hover {
   text-decoration: underline;
 }
 
+.footer-item:nth-of-type(1) ul a {
+  text-transform: none;
+}
+
 .footer-container {
   width: 1200px;
   height: 100%;
   margin: auto;
-  /* background: #195199; */
+}
+
+.footer-item-container {
+  width: 100%;
+  display: flex;
+}
+
+.footer-item {
+  width: 25%;
+}
+
+.media-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-media {
+  width: calc(50% - 10px);
+  margin-bottom: 20px;
+  padding: 15px 0;
+  color: white;
+  background: rgba(0,0,0,0.25);
+  text-align: center;
+  font-size: 24px;
+}
+
+.facebook:hover {
+  background: #3B5998;
+}
+
+.twitter:hover {
+  background: #00aced;
+}
+
+.linked-in:hover {
+  background: #0077B5;
 }
 
 /* -------------------------- Media Queries -------------------------- */
@@ -889,6 +932,9 @@ footer ul a:hover {
   .clients-container img {
     transform: scale(.85);
   }
+  .footer-item {
+    width: 50%;
+  }
 }
 
 @media (min-width: 1235px) {
@@ -908,12 +954,20 @@ footer ul a:hover {
   .news-container .card-alt {
     display: block;
   }
+  .footer-container {
+    display: flex;
+  }
+  .footer-item-container,
+  .footer-item {
+    width: 50%;
+  }
 }
 
 @media (max-width: 972px) {
   header,
   .title-container,
-  .clients-container {
+  .clients-container,
+  .footer-container {
     width: 750px;
   }
   nav,
@@ -928,8 +982,8 @@ footer ul a:hover {
     text-align: center;
     width: 100%;
   }
-  .image-content h1 {
-    padding-top: 280px;
+  .image-content {
+    padding-top: 30vh;
   }
   .our-culture {
     background: #333645;
@@ -941,6 +995,7 @@ footer ul a:hover {
   .clients-container img {
     transform: scale(.8);
   }
+
 }
 
 @media (min-width: 971px) {
@@ -957,6 +1012,9 @@ footer ul a:hover {
   header,
   .clients-container {
     width: 100%;
+  }
+  .footer-container {
+    width: calc(100% - 20px)
   }
   header img {
     margin-left: 20px;
@@ -977,6 +1035,15 @@ footer ul a:hover {
   }
   .clients-container {
     display: none;
+  }
+  .footer-container {
+    padding: 20px 10px 0;
+  }
+  .footer-item-container {
+    display: block;
+  }
+  .footer-item {
+    width: 100%;
   }
 }
 
