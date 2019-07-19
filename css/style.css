@@ -27,7 +27,7 @@ header {
 
 .sticky-header {
   z-index: 10;
-  /* position: sticky; */
+  position: sticky;
   top: 0;
   background: white;
 }
@@ -816,6 +816,7 @@ article {
 footer {
   width: 100%;
   background: #333645;
+  padding: 20px 0;
 }
 
 footer h5 {
